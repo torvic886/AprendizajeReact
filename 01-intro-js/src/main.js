@@ -1,28 +1,23 @@
-const promedio = 5.9;
-
-// Operador ternario
-const status2 = ( promedio >= 5.5) ? 'Aprobado' : 'Rechazado';
+/* eslint-disable no-unused-vars */
 
 
+const user = {
+    username: 'Andres',
+    email: 'correo@gmail.com',
+    age: 20,
+    ranking: 9,
+}
 
-// if (promedio >= 5.5) {
-//     console.log('Aprobado');
-// } else {
-//     console.log('Rechazado');
-// }
+//desestructuracion de objetos
+// const { username, ranking, age} = user;
+// console.log(`${username} tiene ${age} años de edad.`);
 
 
+const username  = user.username;
+const ranking   = user.ranking;
+const age       = user.age;
 
-console.log(`Resultado: ${status2}`);
 
-let max = 0;
+console.log(`${username} tiene ${age} años de edad.`);
 
-const a = 5;
-const b = 8;
-const c = 3;
-
-max = a > b ? a : b;
-max = max > c ? max : b;
-
-console.log(`El numero mayor es ${ max }`);
-
+// console.log(ranking);
